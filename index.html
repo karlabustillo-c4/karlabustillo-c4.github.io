@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- llamo al archivo de CSS -->
+    <link rel= "stylesheet" href="style.css">
+    <!-- llamo al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- llamo al archivo de JavaScript -->
+    <script defer src="./main.js"></script>
+
+    <title>Metallica</title>
+</head>
+
+<body>
+    <header>
+       <!-- contenedor para el encabezado de la pagina -->
+        <div class="logo">
+            <img src="./imagenes/logo.png" alt="logo de metallica">
+        </div>
+
+        <nav>
+
+             <ul>
+                <a href="#historia"><li>HISTORIA</li></a>
+                <a href="https://es.wikipedia.org/wiki/Metallica#Miembros"><li>INTEGRANTES</li></a>
+                <a href="https://www.spirit-of-metal.com/es/discography/Metallica/1"><li>DISCOGRAFÍA</li></a>
+                <a href="https://www.youtube.com/watch?v=tAGnKpE4NCI"><li>PLAYLISTS</li></a>
+                <a href="https://es.wikipedia.org/wiki/Metallica#Premios"><li>PREMIOS</li></a>
+                <a href="https://www.gettyimages.es/fotos/metallica-band"><li>FOTOS</li></a>
+                <a href="https://www.metallica.com/tour/"><li>TOURS</li></a>
+                <a href="https://www.metallica.com/register/"><li>CLUB DE FANS</li><a>
+            
+            </ul>
+
+        </nav>        
+      </header>
+
+  <!-- contenedor para poner una carrusel de bootstrap -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/portada.jpg" class="d-block w-100" alt="portada">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/grupo.jfif" class="d-block w-100" alt="grupo">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/logo1.jfif" class="d-block w-100" alt="logo1">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/grupo1.jfif" class="d-block w-100" alt="grupo1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <div class="presentacion">
+        <h1>¿Quienes somos?</h1>
+        <p>Somos una banda estadounidense de Heavy Metal formada en 1981 en Los Ángeles, California.</p>
+    </div>
+
+    <!-- contenedor general para poner todas las noticias -->
+    <div class="contenedor"> 
+    <!-- primera noticia -->
+      <div class="caja">
+          <img src="./imagenes/ride.jpg" alt="Ride the Lightning">
+          <h1>Ride the Lightning</h1>
+          <h2>(1984)</h2>
+      <div id="contenido" >
+    <!-- este contenedor es el que quiero ocultar/mostrar -->
+          <p>Es el segundo álbum de Metallica también fue publicado por Megaforce Records. El álbum muestra una mayor complejidad y variedad en las composiciones de la banda, así como una mayor presencia de elementos melódicos y progresivos.
+
+            Algunas de las canciones más destacadas son “For Whom the Bell Tolls”, “Fade to Black” y “Creeping Death”.</p>
+      </div>
+      <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+      </div>
+    <!-- segunda noticia -->
+        <div class="caja">
+            <img src="./imagenes/master.jpg" alt="Master of Puppets">
+            <h1>Master of Puppets</h1>
+            <h2>(1986)</h2>
+      <div id="contenido2" >
+    <!-- este contenedor es el que quiero ocultar/mostrar -->   
+          <p>Es el tercer álbum de Metallica fue el primero en su carrera publicado por Elektra Records. El álbum es considerado una obra maestra del thrash metal y uno de los mejores discos de la historia del rock.
+
+              El álbum contiene ocho canciones que combinan velocidad, agresividad, técnica y melodía, con letras que abordan temas como la guerra, la adicción y la manipulación.
+            
+              Algunas de las canciones más emblemáticas son “Battery”, “Master of Puppets” y “Welcome Home (Sanitarium)”.</p>
+      </div>
+      <button onclick='muestra_oculta("contenido2")' class="btn btn-primary" form="contenido" >+</button> 
+      </div> 
+<!-- tercera noticia -->
+        <div class="caja">
+            <img src= "./imagenes/and.jpg" alt="And Justice For All">
+            <h1>…And Justice For All</h1>
+            <h2>(1988)</h2>
+      <div id="contenido3" >
+      <!-- este contenedor es el que quiero ocultar/mostrar -->  
+          <p>Es el cuarto álbum de la banda es el primero que grabaron con el nuevo bajista Jason Newsted, quien remplazó a Cliff Burton.
+
+              El álbum contiene nueve canciones que se caracterizan por su duración, complejidad y temática política y social.
+                
+              Algunas de las canciones más populares son “One”, “Blackened” y “…And Justice for All”.</p>
+        </div>
+        <button onclick='muestra_oculta("contenido3")' class="btn btn-primary" form="contenido" >+</button> 
+        </div>
+      </div>  
+  
+    <div id="historia">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.431238218595!2d-122.52683912410737!3d37.96706427193756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859bfc0661df09%3A0x445cf6ed183674c1!2sMetallica%20HQ%20studios!5e0!3m2!1ses!2shn!4v1716367296801!5m2!1ses!2shn" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5a3duHPWGjY?si=mK2oBXbtX-hMC8B9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  <div>
+      <!-- footer es el pie de pagina -->
+    <footer class="pie">
+        <p>Proyecto de Introducción al Código C4 | 2024 Karla Bustillo Todos los derechos reservados. | Junior Achievement Honduras.</p>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body> 
+</html>   

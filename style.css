@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:white;
+    width: 100%; 
+    font-family: 'Delicious Handrawn', cursive; 
+
+}
+a{
+    text-decoration: none;   
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;   
+}
+header ul li{
+    margin: 10px;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+img{
+    width: 150px;
+}
+h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+}
+h2{
+    font-size: 26px;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    background-color: rgb(101, 87, 228);
+}
+.caja{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja img {
+    border-radius: 50%;
+}
+.caja p{
+    font-size: 20px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+.presentacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(101, 87, 228);
+}
+.presentacion h1{
+    font-size: 35px;
+    color: white;
+    font-family: "Pacifico", cursiva; peso de fuente: 400; estilo de fuente: normal;
+}
+.presentacion p{
+    width: 70%;
+    font-size: 25px;
+    color: white
+    padding: 10px;
+    font-family: "Pacifico", cursiva; peso de fuente: 400; estilo de fuente: normal;
+}
+
+#historia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(101, 87, 228);
+}
+#historia iframe{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color:rgb(101, 87, 228);
+    justify-content: center;
+    display: flex;
+}
+.pie {
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgb(101, 87, 228);
+    height: 100px;
+    margin: 10px;
+
+}
+.pie p{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 30px;
+    width: 100%;
+    color: rgb(34, 8, 34);
+    justify-content: center;
+    display: flex;
+}
